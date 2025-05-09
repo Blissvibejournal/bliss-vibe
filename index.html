@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bliss Vibe</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background: #fff5f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #ffc3a0, #ffafbd);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #ff6f91;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff3e65;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      font-size: 1rem;
+    }
+    button {
+      background: #ff6f91;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #ff3e65;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #ffe3ec;
+      font-size: 0.9rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #ff6f91;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .socials a:hover {
+      color: #ff3e65;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Bliss Vibe Logo">
+    <h1>Bliss Vibe</h1>
+    <p>Your daily dose of study tips, self-growth & skincare bliss</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#topics">Topics</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Bliss Vibe</h2>
+    <p>Bliss Vibe is a digital space where productivity meets self-love. We share daily insights, tips, and resources on studying smarter, personal growth, and skincare rituals to help you glow inside and out.</p>
+  </section>
+
+  <section id="topics">
+    <h2>Our Topics</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Study</h3>
+        <p>Effective study hacks, focus tools, and productivity tips to help you excel academically and manage your time like a pro.</p>
+      </div>
+      <div class="card">
+        <h3>Self-Development</h3>
+        <p>Motivation, mindset shifts, and journaling prompts to help you evolve into your best self.</p>
+      </div>
+      <div class="card">
+        <h3>Skincare</h3>
+        <p>Simple routines, product reviews, and natural tips to help you build a glowing and healthy skincare regimen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <label>Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a> |
+      <a href="https://t.me/yourchannel" target="_blank">Telegram</a>
+    </div>
+    <p>&copy; 2025 Bliss Vibe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
